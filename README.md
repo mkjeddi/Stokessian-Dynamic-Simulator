@@ -20,15 +20,15 @@ The input files for setting up simulation are:
 this file defines setup for simulation and how the code should run. major parameters to set are 
 
 ** deltat: is size of time step for transient simulation
-nstep: is the total number of time steps
-sstep: is starting time step or initial time step (if you are starting from initial time, you may set it to 0)
-nsamp: is the periodic saving time steps
-version: defines the mobility tensor version, 0 is for F, 1 is for FT, and 2 is for FTS. Note that for simulation near to wall version bigger than 1 is not allowed.
-flag_poly: set it to 0 for monodisperese particle size and set it to 1 for polydisperse size distribution
-flag_mat: the code was being developed in two versions Matrix based and non matrix based. Later I decided to develop the code based on mobility matrix so keep it at 1
-flag_lub: set it to 0 to solve set up with out lubrication assumption and set it to 1 for with lubrication consideration.
-flag_prob: 0 is to define problem in free space, 1 is to set problem near a no-slip wall.
-flag_fix: 
+** nstep: is the total number of time steps
+** sstep: is starting time step or initial time step (if you are starting from initial time, you may set it to 0)
+** nsamp: is the periodic saving time steps
+** version: defines the mobility tensor version, 0 is for F, 1 is for FT, and 2 is for FTS. Note that for simulation near to wall ** version bigger than 1 is not allowed.
+** flag_poly: set it to 0 for monodisperese particle size and set it to 1 for polydisperse size distribution
+** flag_mat: the code was being developed in two versions Matrix based and non matrix based. Later I decided to develop the code based on mobility matrix so keep it at 1
+** flag_lub: set it to 0 to solve set up with out lubrication assumption and set it to 1 for with lubrication consideration.
+** flag_prob: 0 is to define problem in free space, 1 is to set problem near a no-slip wall.
+** flag_fix: 
 
 - location.txt
 - force.txt
