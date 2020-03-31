@@ -18,7 +18,7 @@ The input files for setting up simulation are:
 - input.txt
 
 this file defines setup for simulation and how the code should run. major parameters to set are 
-deltat: is size of time step for transient simulation
+--deltat: is size of time step for transient simulation
 nstep: is the total number of time steps
 sstep: is starting time step or initial time step (if you are starting from initial time, you may set it to 0)
 nsamp: is the periodic saving time steps
