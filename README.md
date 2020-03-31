@@ -16,6 +16,7 @@ On Linux machine the code can be compiled using g++. However LAPACK package has 
 
 The input files for setting up simulation are:
 - input.txt
+
 this file defines setup for simulation and how the code should run. major parameters to set are 
 deltat: is size of time step for transient simulation
 nstep: is the total number of time steps
