@@ -1,0 +1,33 @@
+%
+if flag_fread = 1
+
+Force/Torque/Strain for mobile particles
+ID, FX, FY, FZ, TX, TY, TZ, E1:E_xx, E2:E_xy, E3:E_xz, E4:E_Eyz, E5:E_yy
+
+else
+
+FTE for all mobile particles are zerio
+
+Note: F, T, and E values for 
+all F, FT, and FTS cases. 
+%
+0	1	0	0	0	0	0	0	0	0	0	0
+1	1	0	0	0	0	0	0	0	0	0	0
+2	1	0	0	0	0	0	0	0	0	0	0
+3	1	0	0	0	0	0	0	0	0	0	0
+4	1	0	0	0	0	0	0	0	0	0	0
+
+
+
+%
+if flag_freed = 1
+Translational Velocity/Rotational velocity/Strain for fixed particles
+ID, UX, UY, UZ, OX, OY, OZ, EX, EY, EZ
+
+Note: set U, O, and E values for 
+all F, FT, and FTS cases. 
+
+if flag_freed = 2
+amp : amplitude of vibration of fixed particles 
+fer : frequency of vibration of fixed particles
+%

@@ -1,0 +1,17 @@
+%
+parameters to RC
+Rw: wall contact resistance	[Ohm]
+Rij: particle-particle contact resistance	[Ohm]
+Resr: equivalent series resistance	[Ohm]
+Cap: capacitance	[F]
+touch limit [percentage of a_1 + a_2]
+nx:
+ny:
+%
+12.5
+25
+400
+0.0023
+0.09
+30
+15

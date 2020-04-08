@@ -1,0 +1,81 @@
+%
+parameters to set the problem
+%
+0.050
+1000
+0
+1
+1
+1
+1
+1
+0
+0
+3
+0
+0
+1
+1
+0.15
+5
+5
+1
+
+
+1- deltat: time step size
+2- nstep: number of time steps
+3- sstep: start time step
+4- nsamp: save location of particles every # steps
+5- version: 0=F, 1=FT, and 2=FTS
+6- flag_poly: 0=mono- and 1=poly-disperse
+7- flag_mat: 0 for atimes, and 1 is for matrix operation
+8- flag_lub: 0 for only far-field, 1 for far+lubrication limit, or time step to switch from far to lub
+9- flag_prob: 0 for free space and 1 for near a no-slip wall at z = 0
+10- flag_fix: 0 for mobile-only and 1 for fixed particles on one side, 2 for fixed partilces at two sides.
+11- flag_per: 0 for free space, 1 for periodic C in x-direction, 2: xy-, and 3: xy-LE
+12- flag_cper: 0: zeroing incoming/outgoing particles, 1: periodic exchange at PBCs
+13- periodic: 0 for non ewald and 1 for ewald summation
+14- flag_fread: 0 setting inside the code, 1 read force and torque for mobile particles from file, 2 read vibration amplitude and frequencey for fixed particles the rest are FT free,
+15- flag_config: 0 read from file, 1: SC, 2: BCC, 3: FCC, and 4: random distribution.
+16- phi: volume concentration
+17- nx: number of lattice unit cells in x direction
+18- ny: number of lattice unit cells in y direction
+19- nz: number of lattice unit cells in z direction
+
+
+%
+Ui: Uix, Uiy, Uiz farfield translational velocity U_infty
+%
+0.0
+0.0
+0.0
+
+%
+Oi: Oix, Oiy, Oiz farfield rotational velocity O_infty
+%
+0.0
+0.0
+-1.0
+
+%
+Ei: Exx, Exy, Exz, Eyz, Eyy, flow starin when \r\to\infty
+Note->  Ezz+Exx+Ezz=1
+%
+0.0
+1.0
+0.0
+0.0
+0.0
+
+%
+lubrication paramerers [r_max, r_min^2, and n_max for unequal spheres]
+Notes: 
+- Extra care has to be taken when using periodic boundary conditions flag_per = 1 or 2
+  to have r_max smaller than calculation cell size in three directions.
+- The best lubrication limit in free space is four times of the particle radius.
+%
+4.0
+4.00000004
+11
+
+

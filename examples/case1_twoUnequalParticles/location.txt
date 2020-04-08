@@ -1,0 +1,27 @@
+%
+initial structure in following format
+1- np: number of particles
+2- nm: number of mobile particles
+3- xlo
+4- xhi
+4- ylo
+5- yhi
+6- zlo
+7- zhi
+8- particle_id x y z a charge
+.
+.
+.
+units are nm
+%
+2
+2
+-1.000000 
+54.129349
+-1.000000 
+1.756467
+0.000000 
+27.564675
+0	1	1	0	0.5	0
+1	1	4	0	1	0
+
