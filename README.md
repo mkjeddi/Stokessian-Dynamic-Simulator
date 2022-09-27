@@ -1,4 +1,4 @@
-# SDS Manual and Examples - Version: December 2018 
+# SDS Manual and Examples
 This is a tutorial for the Stokessian Dynamics Simulator (SDS). SDS is a C++ code to simulate time evolution of particulate suspensions with possible charge transfer between particles while interacting with each other and with a confining flat wall. The time evolution of particles is simulated using Stokesian dynamics and the electric potential interactions between particles are simulated using Resistor-Capacitor formulation. Detailed thoretical background of SDS is provided in following publications:
 
 - M. Karzar-Jeddi, H. Luo, P.T. Cummings, Mobilities of polydisperse hard spheres near a no-slip wall, Computers & Fluids, 2018
